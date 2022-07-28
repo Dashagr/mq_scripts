@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "breakfast_menu": {
+        "type": "object",
+        "properties": {
+          "food": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "calories": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "price",
+                  "description",
+                  "calories"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "food"
+        ]
+      }
+    },
+    "required": [
+      "breakfast_menu"
+    ]
+  }

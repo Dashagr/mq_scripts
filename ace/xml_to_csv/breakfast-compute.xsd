@@ -1,0 +1,25 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="breakfast_menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Food" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Name"/>
+                    <xs:element type="xs:float" name="Price"/>
+                    <xs:element type="xs:string" name="Description"/>
+                    <xs:element type="xs:short" name="Calories"/>
+                    <xs:element type="xs:float" name="Value"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

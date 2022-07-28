@@ -1,0 +1,21 @@
+#Create a Listener Port
+DEFINE LISTENER(LISTENER.QMDasha) TRPTYPE(TCP) PORT(1414)
+
+#Start the Listener Port
+START LISTENER(LISTENER.QMDasha)
+
+#Create a Channel
+DEFINE CHANNEL(CHNL.QMDasha) CHLTYPE(SVRCONN) TRPTYPE(TCP)
+
+#Create a Queuee
+DEFINE QLOCAL(QMDashaQueue)
+
+#Create a user in the MQ server for Messaging
+'daria' user requires enough authority to connect to the queue manager and its objects
+
+SET AUTHREC OBJTYPE(QMGR) PRINCIPAL('daria') AUTHADD(ALL)
+SET AUTHREC OBJTYPE(QUEUE) PROFILE('**') PRINCIPAL('daria') AUTHADD(ALL)
+SET AUTHREC OBJTYPE(CHANNEL) PROFILE('**') PRINCIPAL('daria') AUTHADD(ALL)
+REFRESH SECURITY(*)
+
+#Set authrec on the channel

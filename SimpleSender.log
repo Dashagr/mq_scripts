@@ -1,0 +1,6 @@
+Jan 14, 2022 12:39:22 PM com.aj.simple.SimpleSender main
+INFO: Connecting to KEYY at 192.168.1.21:1998 via channel: CHNL.KEYY
+Jan 14, 2022 12:39:23 PM com.aj.simple.SimpleSender main
+INFO: 2 messages Sent: 
+Jan 14, 2022 12:39:23 PM com.aj.simple.SimpleSender main
+INFO: Connection closed!

@@ -1,0 +1,218 @@
+Message received by the TCPIPProvider HTTP input node.
+
+Message body:
+( ['xmlnsc' : 0x7feee818ce10]
+  (0x01000400:XmlDeclaration):XmlDeclaration                              = (
+    (0x03000100:Attribute):Version  = '1.0' (CHARACTER)
+    (0x03000100:Attribute):Encoding = 'UTF-8' (CHARACTER)
+  )
+  (0x01000000:Folder        )http://iib.tutorial/salesMessage:SaleMessage = (
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:sm                         = 'http://iib.tutorial/salesMessage' (CHARACTER)
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:xsi                        = 'http://www.w3.org/2001/XMLSchema-instance' (CHARACTER)
+    (0x03000100:Attribute    )http://www.w3.org/2001/XMLSchema-instance:schemaLocation = 'http://iib.tutorial/salesMessage SaleMessage.xsd ' (CHARACTER)
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Header                  = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:SaleListCount = '1' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Hostname      = 'localhost' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Port          = '7777' (CHARACTER)
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:SaleList                = (
+      (0x01000000:Folder)http://iib.tutorial/salesMessage:Invoice = (
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Initial = 'J' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Surname = 'Smith' (CHARACTER)
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345678' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Magazine subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '25' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345679' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Books' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '28' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Balance = '53' (CHARACTER)
+      )
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Trailer                 = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:CompletionTime = '12:11:15-30.12.2014' (CHARACTER)
+    )
+  )
+)
+Message received by the TCPIP Client:
+Message contents:
+( ['xmlnsc' : 0x7fef6c0a28a0]
+  (0x01000400:XmlDeclaration):XmlDeclaration                              = (
+    (0x03000100:Attribute):Version  = '1.0' (CHARACTER)
+    (0x03000100:Attribute):Encoding = 'UTF-8' (CHARACTER)
+  )
+  (0x01000000:Folder        )http://iib.tutorial/salesMessage:SaleMessage = (
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:sm                         = 'http://iib.tutorial/salesMessage' (CHARACTER)
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:xsi                        = 'http://www.w3.org/2001/XMLSchema-instance' (CHARACTER)
+    (0x03000100:Attribute    )http://www.w3.org/2001/XMLSchema-instance:schemaLocation = 'http://iib.tutorial/salesMessage SaleMessage.xsd ' (CHARACTER)
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Header                  = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:SaleListCount = '1' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Hostname      = 'localhost' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Port          = '7777' (CHARACTER)
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:SaleList                = (
+      (0x01000000:Folder)http://iib.tutorial/salesMessage:Invoice = (
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Initial = 'J' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Surname = 'Smith' (CHARACTER)
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345678' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Magazine subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '25' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345679' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Books' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '28' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Balance = '53' (CHARACTER)
+      )
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Trailer                 = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:CompletionTime = '12:11:15-30.12.2014' (CHARACTER)
+    )
+  )
+)
+Message updated before being sent to the File output:
+Transformed message contents:
+( ['xmlnsc' : 0x7fef6c1140c0]
+  (0x01000000:Folder)http://iib.tutorial/sales/report:SalesReport = (
+    (0x01000000:Folder       )http://iib.tutorial/sales/report:SalesRecord = (
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:FirstName = 'J' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:LastName  = 'Smith' (CHARACTER)
+      (0x01000000:Folder     )http://iib.tutorial/sales/report:Item      = (
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Category    = 'Magazine subscription' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Price       = '25' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Quantity    = '1' (CHARACTER)
+      )
+      (0x01000000:Folder     )http://iib.tutorial/sales/report:Item      = (
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Category    = 'Books' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Price       = '28' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Quantity    = '1' (CHARACTER)
+      )
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:Total     = '53' (CHARACTER)
+    )
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:out            = 'http://iib.tutorial/sales/report' (CHARACTER)
+  )
+)
+Message received by the TCPIPProvider HTTP input node.
+
+Message body:
+( ['xmlnsc' : 0x7fef280a8780]
+  (0x01000400:XmlDeclaration):XmlDeclaration                              = (
+    (0x03000100:Attribute):Version  = '1.0' (CHARACTER)
+    (0x03000100:Attribute):Encoding = 'UTF-8' (CHARACTER)
+  )
+  (0x01000000:Folder        )http://iib.tutorial/salesMessage:SaleMessage = (
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:sm                         = 'http://iib.tutorial/salesMessage' (CHARACTER)
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:xsi                        = 'http://www.w3.org/2001/XMLSchema-instance' (CHARACTER)
+    (0x03000100:Attribute    )http://www.w3.org/2001/XMLSchema-instance:schemaLocation = 'http://iib.tutorial/salesMessage SaleMessage.xsd ' (CHARACTER)
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Header                  = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:SaleListCount = '1' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Hostname      = 'localhost' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Port          = '7778' (CHARACTER)
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:SaleList                = (
+      (0x01000000:Folder)http://iib.tutorial/salesMessage:Invoice = (
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Initial = 'J' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Surname = 'Smith' (CHARACTER)
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345678' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Magazine subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '25' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345679' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Books' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '28' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Balance = '53' (CHARACTER)
+      )
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Trailer                 = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:CompletionTime = '12:11:15-30.12.2014' (CHARACTER)
+    )
+  )
+)
+Message received by the TCPIP Client:
+Message contents:
+( ['xmlnsc' : 0x7fef6c0a28a0]
+  (0x01000400:XmlDeclaration):XmlDeclaration                              = (
+    (0x03000100:Attribute):Version  = '1.0' (CHARACTER)
+    (0x03000100:Attribute):Encoding = 'UTF-8' (CHARACTER)
+  )
+  (0x01000000:Folder        )http://iib.tutorial/salesMessage:SaleMessage = (
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:sm                         = 'http://iib.tutorial/salesMessage' (CHARACTER)
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:xsi                        = 'http://www.w3.org/2001/XMLSchema-instance' (CHARACTER)
+    (0x03000100:Attribute    )http://www.w3.org/2001/XMLSchema-instance:schemaLocation = 'http://iib.tutorial/salesMessage SaleMessage.xsd ' (CHARACTER)
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Header                  = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:SaleListCount = '1' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Hostname      = 'localhost' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Port          = '7778' (CHARACTER)
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:SaleList                = (
+      (0x01000000:Folder)http://iib.tutorial/salesMessage:Invoice = (
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Initial = 'J' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Surname = 'Smith' (CHARACTER)
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345678' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Magazine subscription' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '25' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x01000000:Folder     )http://iib.tutorial/salesMessage:Item    = (
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Code        = '12345679' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Category    = 'Books' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Price       = '28' (CHARACTER)
+          (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Quantity    = '1' (CHARACTER)
+        )
+        (0x03000000:PCDataField)http://iib.tutorial/salesMessage:Balance = '53' (CHARACTER)
+      )
+    )
+    (0x01000000:Folder       )http://iib.tutorial/salesMessage:Trailer                 = (
+      (0x03000000:PCDataField)http://iib.tutorial/salesMessage:CompletionTime = '12:11:15-30.12.2014' (CHARACTER)
+    )
+  )
+)
+Message updated before being sent to the File output:
+Transformed message contents:
+( ['xmlnsc' : 0x7fef6c1140c0]
+  (0x01000000:Folder)http://iib.tutorial/sales/report:SalesReport = (
+    (0x01000000:Folder       )http://iib.tutorial/sales/report:SalesRecord = (
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:FirstName = 'J' (CHARACTER)
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:LastName  = 'Smith' (CHARACTER)
+      (0x01000000:Folder     )http://iib.tutorial/sales/report:Item      = (
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Description = 'Cycle world - Yearly subscription' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Category    = 'Magazine subscription' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Price       = '25' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Quantity    = '1' (CHARACTER)
+      )
+      (0x01000000:Folder     )http://iib.tutorial/sales/report:Item      = (
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Description = 'W. Shakespear - Hamlet' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Category    = 'Books' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Price       = '28' (CHARACTER)
+        (0x03000000:PCDataField)http://iib.tutorial/sales/report:Quantity    = '1' (CHARACTER)
+      )
+      (0x03000000:PCDataField)http://iib.tutorial/sales/report:Total     = '53' (CHARACTER)
+    )
+    (0x03000102:NamespaceDecl)http://www.w3.org/2000/xmlns/:out            = 'http://iib.tutorial/sales/report' (CHARACTER)
+  )
+)

@@ -1,0 +1,42 @@
+5724-H72 (C) Copyright IBM Corp. 1994, 2020.
+Starting MQSC for queue manager QMDASHA.
+
+
+     1 : source setqmdasha.sh
+AMQ8405I: Syntax error detected at or near end of command segment below:-
+s
+
+AMQ8426I: Valid MQSC commands are:
+
+    ALTER
+    CLEAR
+    DEFINE
+    DELETE
+    DISPLAY
+    END
+    EXIT
+    PING
+    PURGE
+    QUIT
+    REFRESH
+    RESET
+    RESOLVE
+    RESUME
+    SET
+    START
+    STOP
+    SUSPEND
+       : 
+     2 : DELETE QLOCAL("$BLA")
+AMQ8405I: Syntax error detected at or near end of command segment below:-
+DELETE QLOCAL("
+
+AMQ8427I: Valid syntax for the MQSC command:
+
+  DELETE QLOCAL( q_name )
+   [ AUTHREC( YES | NO ) ]
+   [ PURGE | NOPURGE ]
+     3 : END
+2 MQSC commands read.
+2 commands have a syntax error.
+All valid MQSC commands were processed.

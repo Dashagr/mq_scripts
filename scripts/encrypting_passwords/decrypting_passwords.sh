@@ -1,0 +1,1 @@
+echo $(< password.txt) | openssl enc -aes-256-cbc -md sha512 -a -d -pbkdf2 -iter 100000 -salt -pass pass:'encrypted.password'
